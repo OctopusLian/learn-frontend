@@ -1,0 +1,28 @@
+<!--请使用这一章学到的字符串方法将字符串“Hello Lvye”中的“e”全部删除，也就是最终得到的结果是“Hllo Lvy!”-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+<!--  方法1-->
+  <script>
+    var str = "Hello Lvye";
+    var result = str.replace(/e/g, "");
+    document.write(result);
+  </script>
+  <!--  方法2-->
+  <script>
+    var str = "Hello Lvye";
+    var result = "";
+    for (var i = 0; i < str.length; i++) {
+      if (str.charAt(i) != "e") {
+        result += str.charAt(i);
+      }
+    }
+    document.write(result);
+  </script>
+</head>
+<body>
+
+</body>
+</html>

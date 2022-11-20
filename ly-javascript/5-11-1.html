@@ -1,0 +1,23 @@
+<!--如果有一个字符串"Rome was not built in a day"，请用程序统计其中有多少个单词。-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script>
+        var str = "Rome was not built in a day";
+        //n用于统计空格个数
+        var n = 0;
+        for (var i = 0; i < str.length; i++) {
+            if (str.charAt(i) == " ") {
+                n++;
+            }
+        }
+        n++;
+        document.write("共有" + n + "个单词");
+    </script>
+</head>
+<body>
+
+</body>
+</html>
